@@ -1,0 +1,487 @@
+:root {
+    --swiper-theme-color: #ffffff !important;
+}
+
+/*menu*/
+header{
+    background: linear-gradient(90deg, hsl(23, 84%, 75%) 0%, hsl(9, 92%, 54%) 100%);
+    padding:10px;
+}
+
+nav{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav img{
+    width: 30px;
+}
+nav ul{
+    align-items: center;
+}
+
+body{
+    background: linear-gradient(90deg, hsl(23, 84%, 75%) 0%, hsl(9, 92%, 54%) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton-border{
+    border-radius: 3rem;
+    margin-left:15px;
+    border: 2px solid;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*swiper*/
+.swiper {
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+  }
+.swiper-scrollbar-drag{
+    display: none;
+}
+
+.swiper-scrollbar-horizontal{
+    display: none;
+}
+
+/*slider 1*/
+
+.swiper-slide img{
+    height:420px
+}
+
+.swiper-slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+
+.imagen{
+    justify-self: center;
+    animation: floating 2s ease-in-out infinite;
+}
+
+.info{
+    justify-self: center;
+    
+}
+
+.info h3 {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+}
+.info h1{
+    font-weight: 800;
+    color: white;
+    font-size: 4rem;
+}
+
+.info p {
+    color: white;
+}
+
+.btn-primary{
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+
+.btn-primary:hover{
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+
+.swiper-button-prev{
+    display: none;
+    color: white !important;
+}
+
+.swiper-button-next{
+    display: none;
+    color: white !important;
+}
+
+/*categorias*/
+.categorias{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+
+.categorias-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+
+.categoria, h2{
+    font-weight: 600;
+}
+
+.categoria-content{
+    margin-top: 20px;
+    padding:50px;
+    justify-self: center;
+    text-align:center;
+    color:white;
+}
+.categoria-content img{
+    width: 200px;
+}
+
+.categoria-content h4{
+    font-weight: 600;
+}
+
+.categoria-content img:hover{
+    transform: translate(0px,-10px);
+    transition:0.50s
+}
+
+
+/*Acerca de*/
+
+.acerca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.historia{
+    padding: 50px;
+}
+
+.historia h2{
+    margin-top: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+.historia p{
+    margin-top: 50px;
+    font-weight: 500;
+    color: white;
+}
+.acerca img{
+    height:480px;
+    justify-self: center;
+    animation: floating 2s ease-in-out infinite;
+
+}
+
+/*truco*/
+
+.truco h2{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.truco-productos{
+    display: grid;
+    gap: 3.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 200px);
+    text-align: center;
+    margin-top: 60px;
+
+}
+.producto{
+    background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    color: white;
+    border-radius: 10px; 
+    padding:20px  
+}
+
+.producto img {
+    width: 110px;
+    
+}
+
+.producto img:hover{
+    transform: translate(0px,-10px);
+    transition:0.50s
+}
+
+.articulo {
+    font-size: 16px;
+}
+
+.producto h5{
+    font-weight: 600;
+}
+
+/*descuento*/
+    
+.descuento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+     background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.imagen-descuento img{
+    max-width: 500px;
+}
+
+.descuento-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.descuento-info h3{
+   text-align: center;
+    font-weight: 600;
+    color:white;
+
+}
+
+.descuento-info button{
+        width: 300px;
+        margin: 0 auto;
+        background-color: orangered;
+        border-radius: 20px;
+}
+
+/*newsletter*/
+
+.newsletter{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+
+.formulario{
+    background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    border-radius: 40px;
+    padding: 40px;  
+}
+
+
+.input2{
+     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.formulario input{
+    width: 50%;   
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 768px){
+
+    
+    .descuento{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+     background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    padding: 40px;
+    border-radius: 40px;
+}
+    
+    
+ .imagen-descuento{
+    text-align: center;
+}
+
+    .imagen-descuento img{
+    max-width: 170px;
+    text-align: center;
+}
+
+    .categorias-contenido{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:20px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 900px;
+      }
+
+      .swiper-slide{
+        display: grid;
+        grid-template-columns: 1fr ;}
+    
+        .truco-productos{
+            display: grid;
+            gap: 3.5rem;
+            justify-content: center;
+            grid-template-columns: repeat(1, 200px);
+            text-align: center;
+            margin-top: 60px;
+        
+        }
+
+  }
+
+@media (max-width: 600px) {
+    
+    /*menu*/
+    
+    .navbar-nav {
+    background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    }
+
+    .boton-border{
+        border-radius: 3rem;
+        margin-left:15px;
+        border: 2px solid;
+        font-weight: 600;
+    }
+
+    .swiper-slide{
+        display: grid;
+        grid-template-columns: 1fr ;}
+
+  }
+
+  @media (max-width: 425px){
+
+    .descuento{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+    /*swiper*/
+.swiper {
+    width: 100%;
+    height: 900px;
+  }
+
+  /*slider 1*/
+
+.swiper-slide img{
+
+    height:200px;
+    margin-left: -60px;
+}
+    .info h3 {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .info h1{
+        font-weight: 800;
+        color: white;
+        font-size: 32px;
+    }
+
+    .swiper-button-prev{
+        display: none !important;
+        color: white !important;
+    }
+    
+    .swiper-button-next{
+        display: none !important;
+        color: white !important;
+    }
+
+    /*producto*/
+    .truco-productos{
+        display: grid;
+        gap: 3.5rem;
+        justify-content: center;
+        grid-template-columns: repeat(1, 200px);
+        text-align: center;
+        margin-top: 60px;
+    
+    }
+    
+    
+/*categorias*/
+.categorias-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:20px;
+}
+
+  /*acerca */
+
+  .acerca{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.acerca img{
+    height:280px;
+    justify-self: center;
+    animation: floating 2s ease-in-out infinite;
+
+}
+
+
+}
+
+
+  @media (max-width: 376px){
+
+    .swiper-slide img{
+
+        height:190px;
+        margin-left: -60px;
+    }
+      
+    .descuento{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+     background: linear-gradient(135deg, hsla(0, 0%, 17%, 1) 20%, hsla(0, 0%, 0%, 1) 64%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+    
+ .imagen-descuento{
+    text-align: center;
+}
+
+    .imagen-descuento img{
+    max-width: 100px
+}
+.descuento-info h3{
+    font-size: 20px;
+   text-align: center;
+    font-weight: 600;
+    color:white;
+
+}
+      .descuento-info button{
+        width: 150px;
+        margin: 0 auto;
+        background-color: orangered;
+        border-radius: 20px;
+}
+  }
+
+  /*=============== KEYFRAMES ===============*/
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+  }
